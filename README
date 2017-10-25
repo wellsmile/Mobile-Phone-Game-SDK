@@ -1,0 +1,25 @@
+System-wide Required Packages:
+	yum -y groupinstall "Development tools" "Performance Tools" "Hardware monitoring utilities" "Networking Tools" "Console internet tools" "Server Platform" "System administration tools" "System Management" "Network Infrastructure Server" "Base" "Debugging Tools"
+	yum -y install bzip2-devel zlib-devel sqlite-devel openssl-devel readline-devel tk-devel mysql-devel  libcurl-devel expat-devel libmemcached-devel libffi-devel syslog-ng
+
+	useradd apiserver
+	mkdir -p /data/log/supervisord
+	mkdir -p /data/log/uwsgi
+	mkdir -p /data/log/celery
+	mkdir -p /opt/www/run
+	chown apiserver:apiserver /opt/www/run
+	
+	mkdir -p /tmp/logs /opt/www/logs
+	chown apiserver:apiserver /tmp/logs /opt/www/logs
+
+Python (2.7.12) Module Dependencies (please use `pip install` to install the dependency modules if necessary):
+	pip 
+	- requests
+	- redis
+	- celery
+	- mysql-python
+	- django 1.10
+	- python-dateutil
+	- pyopenssl 16.1.0
+
+Please start the service by using the supervisord tools and the configuration file locate at supervisord.conf and daemons directory

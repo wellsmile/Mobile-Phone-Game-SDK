@@ -1,0 +1,3 @@
+[submodule "modules/matrix-sdk-python"]
+	path = modules/matrix-sdk-python
+	url = git@172.16.78.201:feipan/matrix-sdk-python.git

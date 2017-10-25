@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+prettyexc/__init__.py
+prettyexc/core.py
+prettyexc/environment.py
+prettyexc/exceptions.py
+prettyexc/patch.py
+prettyexc/version.txt
+prettyexc.egg-info/PKG-INFO
+prettyexc.egg-info/SOURCES.txt
+prettyexc.egg-info/dependency_links.txt
+prettyexc.egg-info/requires.txt
+prettyexc.egg-info/top_level.txt
